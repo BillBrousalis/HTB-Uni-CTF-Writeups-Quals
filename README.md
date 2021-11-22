@@ -1,11 +1,11 @@
 # Arachnoid Heaven (Pwn) Writeup
 Running the binary, we can quickly conclude that this is a heap challenge.
 
-!(https://github.com/BillBrousalis/htb_uni_ctf_writeups/blob/main/screenshots/arachnoid_menu.png)
+![alt text](https://github.com/BillBrousalis/htb_uni_ctf_writeups/blob/main/screenshots/arachnoid_menu.png)
 
 Reading the pseudocode in ida, we come across the **obtain** function:
 
-** insert obtain function pseudocode **
+![alt text](https://github.com/BillBrousalis/htb_uni_ctf_writeups/blob/main/screenshots/arachnoid_win_func.png)
 
 It checks if the *Code* corresponding to a particular arachnoid is set to 'sp1d3y',
 and if so, it prints out the flag.
