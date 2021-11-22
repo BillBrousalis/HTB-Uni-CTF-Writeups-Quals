@@ -1,8 +1,7 @@
 # Arachnoid Heaven (Pwn) Writeup
-
 Running the binary, we can quickly conclude that this is a heap challenge.
 
-** insert menu img **
+!(https://github.com/BillBrousalis/htb_uni_ctf_writeups/blob/main/screenshots/arachnoid_menu.png)
 
 Reading the pseudocode in ida, we come across the **obtain** function:
 
