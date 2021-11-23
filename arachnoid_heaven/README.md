@@ -5,9 +5,9 @@ Running the binary, we can quickly conclude that this is a heap challenge.
 
 We get the classic menu with options to create, delete, view, and then ... obtain ?
 Reading the pseudocode in ida, everything looks as expected,
-with craft_arachnoid using malloc to allocate space, delete freeing chunks 
-and view letting us view the arachnoids, and since deleted arachnoids aren't
-taken into account in the view function, we can even view those.
+with craft function using malloc to allocate chunks, delete freeing chunks 
+and view letting us view the arachnoids and their corresponding **Code**, which is set to "Bad" uppon creation of the arachnoid, without the user having direct access to it., and since deleted arachnoids aren't
+taken into account in the view function, we can even view those as well.
 
 Reading through the **obtain** function, we see this:
 ![alt text](https://github.com/BillBrousalis/htb_uni_ctf_writeups/blob/main/arachnoid_heaven/screenshots/arachnoid_win_func.png)
