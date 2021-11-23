@@ -3,12 +3,17 @@ Running the binary, we can quickly conclude that this is a heap challenge.
 
 ![alt text](https://github.com/BillBrousalis/htb_uni_ctf_writeups/blob/main/arachnoid_heaven/screenshots/arachnoid_menu.png)
 
-Reading the pseudocode in ida, we come across the **obtain** function:
+We get the classic menu with options to create, delete, view, and then ... obtain ?
+Reading the pseudocode in ida, everything looks as expected,
+with craft_arachnoid using malloc to allocate space, delete freeing chunks 
+and view letting us view the arachnoids, and since deleted arachnoids aren't
+taken into account in the view function, we can even view those.
 
+Reading through the **obtain** function, we see this:
 ![alt text](https://github.com/BillBrousalis/htb_uni_ctf_writeups/blob/main/arachnoid_heaven/screenshots/arachnoid_win_func.png)
 
 It checks if the *Code* corresponding to a particular arachnoid is set to 'sp1d3y',
-and if so, it prints out the flag.
+and if so, it prints out the flag. Basically a win function.
 
 The user chooses the arachnoid index to obtain, and nothing is stopping us from
 selecting a chunk that has been freed.
