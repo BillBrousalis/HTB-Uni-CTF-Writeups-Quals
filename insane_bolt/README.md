@@ -12,9 +12,9 @@ The answer needed to be given within a few seconds, and we needed to pass
 If we look at multiple generated mazes carefully, we can spot something;
 There is never a need for the robot to move UP, not even in the navigation process.
 This simplifies the problem a lot, since there is no need to use something like a 
-breadth-first-search algorightm anymore.
+breadth-first-search algorithm anymore.
 
-### The logic used
+## The logic used
 We will have our robot navigate the maze in a certain way, until it finds
 its way to the gem, while also keeping a record of the steps taken (ex. "DLRDDLLRD").
 When the destination is reached, removing any wasted moves from our steps will result
