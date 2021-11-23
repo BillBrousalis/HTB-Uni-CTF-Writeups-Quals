@@ -1,7 +1,7 @@
 # Insane Bolt (Misc) Writeup
 This was a **programming** challenge.
 
-![alt text](https://github.com/BillBrousalis/htb_uni_ctf_writeups/tree/main/insane_bolt/screenshots/insanebolt_maze.png)
+![alt text](https://github.com/BillBrousalis/htb_uni_ctf_writeups/blob/main/insane_bolt/screenshots/insanebolt_maze.png)
 
 We were given a maze of emojis, and asked to provide directions (ex. "DLLDRD")
 so that the robot can reach the gem, while taking the shortest possible path.
@@ -25,4 +25,4 @@ DDLLLRRRRDDLD ==> DDRDDLD (removed LLLRRR, since they cancel each other out)
 
 And there we have it. The code is available for more details.
 
-![alt text](https://github.com/BillBrousalis/htb_uni_ctf_writeups/tree/main/insane_bolt/screenshots/insanebolt_flag.png)
+![alt text](https://github.com/BillBrousalis/htb_uni_ctf_writeups/tree/blob/insane_bolt/screenshots/insanebolt_flag.png)
