@@ -12,7 +12,7 @@ and if so, it prints out the flag.
 
 The user chooses the arachnoid index to obtain, and nothing is stopping us from
 selecting a chunk that has been freed.
-So there we have it: a Use-After-Free vulnerability.
+So there we have it: a **Use-After-Free vulnerability**.
 We can use this to exploit the program.
 
 ```
@@ -54,3 +54,7 @@ def exploit():
 if __name__ == '__main__':
   exploit()
 ```
+
+## And there we have it:
+
+![alt text](https://github.com/BillBrousalis/htb_uni_ctf_writeups/blob/main/arachnoid_heaven/screenshots/arachnoid_flag.png)
