@@ -1,2 +1,2 @@
 # HTB-Uni-CTF-Writeups-Quals
-hackthebox university ctf 2021 - challenge writeups
+Writeups for the challenges I solved during the HackTheBox University CTF Qualifier Round (2021)
